@@ -1,0 +1,6 @@
+---
+- name: Restarting chrony
+  service:
+    name: chrony
+    state: restarted
+  listen: restart chrony
